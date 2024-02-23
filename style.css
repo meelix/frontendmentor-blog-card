@@ -6,13 +6,19 @@
 }
 
 @font-face {
-  font-family: 'Figtree';
-  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf');
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-VariableFont_wght.ttf");
   font-display: swap;
 }
 
-* {box-sizing:border-box}
-img {width:100%;height:auto;display:block}
+* {
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 body {
   margin: 0;
@@ -20,7 +26,7 @@ body {
   display: grid;
   place-items: center;
   padding: 24px;
-  
+
   background-color: var(--yellow);
   color: var(--black);
 
@@ -42,9 +48,13 @@ main {
 
   font-family: Figtree;
 
+  transition: 0.3s;
   & > * {
     margin-top: 0;
     margin-bottom: 12px;
+  }
+  &:hover {
+    box-shadow: 12px 10px 0px 0px #000;
   }
 }
 
@@ -61,14 +71,14 @@ main {
 
 .tags {
   display: flex;
-  
+
   & .tag {
     padding: 4px 12px;
     border-radius: 4px;
-    
+
     background: var(--yellow);
     color: var(--black);
-    
+
     font-size: 12px;
     font-style: normal;
     font-weight: 800;
@@ -88,8 +98,8 @@ main {
 
 .title {
   color: var(--black);
-  transition: color .08s;
-  
+  transition: color 0.08s;
+
   text-decoration: none;
 
   &:hover {
@@ -131,9 +141,7 @@ main {
 }
 
 footer {
-  position: absolute;
-  bottom: 20px;
-  
+  margin-top: 20px;
   font-size: 11px;
   text-align: center;
 
