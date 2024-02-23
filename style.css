@@ -1,0 +1,134 @@
+:root {
+  --black: #111;
+  --white: #fff;
+  --yellow: #f4d04e;
+  --gray: #7f7f7f;
+}
+
+@font-face {
+  font-family: 'Figtree';
+  src: url('./assets/fonts/Figtree-VariableFont_wght.ttf');
+  font-display: swap;
+}
+
+* {box-sizing:border-box}
+img {width:100%;height:auto;display:block}
+
+body {
+  margin: 0;
+  height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  
+  background-color: var(--yellow);
+  color: var(--black);
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+main {
+  padding: 24px;
+  width: min(100%, 384px);
+  display: block;
+
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  box-shadow: 8px 8px 0px 0px #000;
+  border-radius: 20px;
+
+  font-family: Figtree;
+
+  & > * {
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+}
+
+.header {
+  margin-bottom: 24px;
+
+  border-radius: 10px;
+}
+
+.tags {
+  display: flex;
+  
+  & .tag {
+    padding: 4px 12px;
+    border-radius: 4px;
+    
+    background: var(--yellow);
+    color: var(--black);
+    
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+    text-decoration: none;
+  }
+}
+
+.date {
+  display: block;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.title {
+  color: var(--black);
+  transition: color .08s;
+  
+  text-decoration: none;
+
+  &:hover {
+    color: var(--yellow);
+  }
+
+  & h1 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 150%;
+  }
+}
+
+.teaser {
+  color: var(--gray);
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 0;
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+
+  & img {
+    width: 32px;
+    aspect-ratio: 1/1;
+    margin-right: 12px;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  
+  font-size: 11px;
+  text-align: center;
+
+  & a {
+    color: var(--black);
+  }
+}
