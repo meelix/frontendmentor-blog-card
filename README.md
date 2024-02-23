@@ -14,7 +14,7 @@ Users should be able to:
 
 ## Links
 
-- [Solution URL](https://your-solution-url.com)
+- [Solution URL](https://www.frontendmentor.io/solutions/very-quick-card-JTUaAaKmo5)
 - [Live Site URL](https://meelix.github.io/frontendmentor-blog-card)
 
 ## Built with
