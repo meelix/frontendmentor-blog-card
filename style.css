@@ -106,6 +106,10 @@ main {
 
 .teaser {
   color: var(--gray);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
 }
 
 .author {
@@ -143,8 +147,10 @@ footer {
     font-size: 24px;
   }
   .tag,
-  .date,
-  .teaser {
+  .date {
     font-size: 14px;
+  }
+  .teaser {
+    font-size: 16px;
   }
 }
